@@ -1,1 +1,39 @@
- 
+body {
+	min-height: 100vh;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	background-color: #1F2937;
+}
+
+.header-logo {
+	display: flex;
+	font-size: 24px;
+	color: #F9FAF8;
+}
+
+.hero-main-text {
+	font-size: 48px;
+	font-weight: bold;
+	color: #F9FAF8;
+}
+
+.hero-secondary-text {
+	font-size: 18px;
+	color: #E5E7EB;
+}
+
+button {
+	color: #3882F6;
+}
+
+.info-section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
