@@ -1,18 +1,56 @@
 body {
-	min-height: 100vh;
+	font-family: Roberto;
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
 	display: flex;
-	justify-content: center;
-	padding: 30px;
 	background-color: #1F2937;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	min-width: 100%;
 }
 
-.header-logo {
+.left-and-right {
 	display: flex;
-	font-size: 24px;
+	flex-direction: row;
+	justify-content: space-around;
+	min-width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.left {
+	display: flex;
+	align-items: center;	
+	flex-direction: row;
 	color: #F9FAF8;
+	font-size: 24px;
+}
+
+img {
+	display: flex;
+}
+
+.right {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+
+li {
+	list-style-type: none;
+	display: flex;
+	font-size: 18px;
+	color: #E5E7EB;
+}
+
+ul {
+	text-decoration: none;
+	gap: 8px;
 }
 
 .hero-main-text {
@@ -22,18 +60,89 @@ body {
 }
 
 .hero-secondary-text {
-	font-size: 18px;
+	font-size: 10px;
 	color: #E5E7EB;
 }
 
+.container {
+	display: flex;
+	background-color: #1F2937;
+	padding-top: 60px;
+}
+
+.text-and-button {
+	display: flex;
+	flex-direction: column;
+	padding-right: 60px;
+}
+
+img {
+	height: 150px;
+	width: 250px;
+}
+
+.image {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex: auto;
+	flex-wrap: wrap;
+	width: 300px;
+	height: 300px;
+}
+
 button {
-	color: #3882F6;
+	background-color: #3882F6;
+	height: 40px;
+	width: 100px;
+	border-radius: 6px 6px 6px 6px;
+	border-color: #3882F6;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-bottom: 0px;
 }
 
 .info-section {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	flex-direction: column;
 }
 
+.info-header {
+	display: flex;
+	justify-content: center;
+	font-weight: bolder;
+	color: #1F2937;
+	font-size: 36px;
 
+}
+
+.info-pics {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.quote {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.quote-person {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.calltoaction {
+	display: flex;
+	justify-content: center;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
