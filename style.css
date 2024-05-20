@@ -2,6 +2,8 @@ body {
 	font-family: Roberto;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 100%
 }
 
 .header {
@@ -10,7 +12,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
-	min-width: 100%;
+	flex: 1;
 }
 
 .left-and-right {
@@ -111,12 +113,25 @@ button {
 	flex-direction: column;
 }
 
+.info1, .info2, .info3, .img-info1, .img-info2, .img-info3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.text1, .text2, .text3 {
+	margin-top: 20px;
+}
+
 .info-header {
 	display: flex;
 	justify-content: center;
 	font-weight: bolder;
 	color: #1F2937;
 	font-size: 36px;
+	margin-bottom: 30px;
 
 }
 
@@ -124,25 +139,85 @@ button {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	gap: 30px;
+	border-color: blue;
+}
+
+
+.quote-container {
+	display: flex;
+	background-color: #E5E7EB;
+	min-height: 60vh;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 50px;
 }
 
 .quote {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	font-style: italic;
+	flex-wrap: wrap;
 }
 
 .quote-person {
 	display: flex;
 	justify-content: flex-end;
+	margin-top: 40px;
+	margin-right: 40px;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+.quote, .quote-person {
+	margin: 35px;
 }
 
 .calltoaction {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	background-color: #3882F6;
+	border-radius: 5px;
+	height: 100px;
+	margin-right: 250px;
+	margin-left: 250px;
+	margin-bottom: 50px;
+}
+.cta-text-button-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.cta-small-text, .cta-large-text {
+	color: white;
+}
+
+.cta-button {
+	margin-left: 50px;
+}
+
+.cta-small-text {
+	font-size: 13px;
+}
+
+.cta-large-text {
+	font-weight: bold;
+	font-size: 30px;
 }
 
 .footer {
 	display: flex;
+	text-align: center;
 	justify-content: center;
+	background-color: #1F2937;
+	color: white;
+}
+
+.copyright {
+	display: flex;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
